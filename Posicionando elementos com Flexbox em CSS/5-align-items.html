@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+        }
+
+        .item{
+            background-color: greenyellow;
+            color: black;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Suspendisse convallis volutpat elit, sit amet venenatis nisl lacinia at. Sed sodales, mauris ac tincidunt auctor, justo ligula cursus mauris, in mollis ipsum justo non odio.</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Suspendisse convallis volutpat elit, sit amet venenatis nisl lacinia at. Sed sodales, mauris ac tincidunt auctor, justo ligula cursus mauris, in mollis ipsum justo non odio.</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Suspendisse convallis volutpat elit, sit amet venenatis nisl lacinia at. Sed sodales, mauris ac tincidunt auctor, justo ligula cursus mauris, in mollis ipsum justo non odio.</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Suspendisse convallis volutpat elit, sit amet venenatis nisl lacinia at. Sed sodales, mauris ac tincidunt auctor, justo ligula cursus mauris, in mollis ipsum justo non odio.</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item">1</div>
+        <div class="item"><br>Lorem ipsum dolor sit amet</div>
+        <div class="item">Suspendisse convallis volutpat elit, sit amet venenatis nisl lacinia at. Sed sodales, mauris ac tincidunt auctor, justo ligula cursus mauris, in mollis ipsum justo non odio.</div>
+    </section>
+
+    <h1>COLUMN</h1>
+    <p>center</p>
+    <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Suspendisse convallis volutpat elit, sit amet venenatis nisl lacinia at. Sed sodales, mauris ac tincidunt auctor, justo ligula cursus mauris, in mollis ipsum justo non odio.</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Suspendisse convallis volutpat elit, sit amet venenatis nisl lacinia at. Sed sodales, mauris ac tincidunt auctor, justo ligula cursus mauris, in mollis ipsum justo non odio.</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end column">
+        <div class="item">1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Suspendisse convallis volutpat elit, sit amet venenatis nisl lacinia at. Sed sodales, mauris ac tincidunt auctor, justo ligula cursus mauris, in mollis ipsum justo non odio.</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline column">
+        <div class="item">1</div>
+        <div class="item"><br>Lorem ipsum dolor sit amet</div>
+        <div class="item">Suspendisse convallis volutpat elit, sit amet venenatis nisl lacinia at. Sed sodales, mauris ac tincidunt auctor, justo ligula cursus mauris, in mollis ipsum justo non odio.</div>
+    </section>
+
+    <p>alinhamento central à tela</p>
+    <section class="container central center">
+        <div class="item">Sed sodales, mauris ac tincidunt auctor, in mollis ipsum justo non odio.</div>
+    </section>
+</body>
+</html>
