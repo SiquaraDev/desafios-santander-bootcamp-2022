@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex shrink</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            display: flex;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: blue;
+            color: white;
+            margin: 5px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .s-0{
+            flex-shrink: 0;
+        }
+
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .s-2{
+            flex-shrink: 2;
+        }
+
+        .s-3{
+            flex-shrink: 3;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .b100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>flex-shrink 0</p>
+    <div class="flex-container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">B</div>
+        <div class="item s-0 fg-1">C</div>
+        <div class="item s-0 fg-1">D</div>
+    </div>
+    <div class="flex-container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">BBB</div>
+        <div class="item s-0 fg-1">CCCCC</div>
+        <div class="item s-0 fg-1">DD</div>
+    </div>
+
+    <p>flex-shrink 1 + basis 100px</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1 b100">A</div>
+        <div class="item s-1 fg-1 b100">BBBBBBBBBBB</div>
+        <div class="item s-1 fg-1 b100">CCCCC</div>
+        <div class="item s-1 fg-1 b100">DDDDDDDDDDDDD</div>
+    </div>
+
+    <p>flex-shrink 1</p>
+    <div class="flex-container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+    </div>
+
+    <p>flex-shrink 2</p>
+    <div class="flex-container">
+        <div class="item s-2 fg-1 b100">A</div>
+        <div class="item s-2 fg-1 b100">BBBBBBBBBBB</div>
+        <div class="item s-2 fg-1 b100">CCCCC</div>
+        <div class="item s-2 fg-1 b100">DDDDDDDDDDDD</div>
+    </div>
+
+    <p>flex-shrink 3</p>
+    <div class="flex-container">
+        <div class="item s-3 fg-1 b100">A</div>
+        <div class="item s-3 fg-1 b100">BBBBBBBBBBB</div>
+        <div class="item s-3 fg-1 b100">CCCCC</div>
+        <div class="item s-3 fg-1 b100">DDDDDDDDDDDD</div>
+    </div>
+</body>
+</html>
