@@ -14,26 +14,28 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
 }
 
 .instagram-wrapper {
     display: flex;
     align-items: center;
-    justify-content: start;
-    width: 60%;
-    height: 100vh;
+    justify-content: center;
+    width: 100%;
+    height: 840px;
 }
 
 .instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 100%;
 }
 
 .instagram-phone img {
-    height: 32rem;
+    height: 34rem;
 }
 
 .instagram-continue {
@@ -41,7 +43,7 @@ body {
     align-items: center; /* horizontal */
     justify-content: space-around; /* vertical */
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     min-height: 34rem;
 }
 
@@ -84,9 +86,17 @@ body {
     border-radius: 4px;
 }
 
+.instagram-login:hover {
+    background-color: #008eec
+}
+
 .instagram-logout {
     color: #0095f6;
     margin-top: 1rem;
+}
+
+.instagram-logout:hover {
+    text-decoration: underline;
 }
 
 .not-account {
@@ -97,19 +107,23 @@ body {
     color: #0095f6;
 }
 
+.link-blue:hover {
+    text-decoration: underline;
+}
+
 .get-the-app {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 400px;
     padding: 1.3rem 0;
 }
 
 .download {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem;
 }
@@ -128,8 +142,25 @@ body {
     background-image: url('./img/googleplay-button.png');
 }
 
-/* media queries */
+footer{
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 1em rgb(201, 201, 201);
+    width: 100%;
+}
 
+footer .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    width: 100%;
+}
+
+
+/* media queries */
 
 @media (max-width: 1024px) {
     .instagram-wrapper {
@@ -137,9 +168,12 @@ body {
     }
 }
 
-@media (max-width: 650px) {
+
+@media (max-width: 800px) {
     body {
         background-color: #ffffff;
+        min-width: 370px;
+        min-width: 500px;
     }
 
     .instagram-wrapper {
