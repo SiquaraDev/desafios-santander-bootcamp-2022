@@ -2,7 +2,7 @@ let count = 0;
 
 const CURRENT_NUMBER = document.getElementById('currentNumber');
 const SOMA_BTN = document.getElementById('mais');
-const SUB_BTN = document.getElementById('menos')
+const SUB_BTN = document.getElementById('menos');
 
 function increment() {
 	if(count < 50) {
