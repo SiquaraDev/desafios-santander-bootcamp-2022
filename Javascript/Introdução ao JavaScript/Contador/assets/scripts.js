@@ -1,6 +1,8 @@
 let count = 0;
 
 const CURRENT_NUMBER = document.getElementById('currentNumber');
+const SOMA_BTN = document.getElementById('mais');
+const SUB_BTN = document.getElementById('menos')
 
 function increment() {
 	if(count < 50) {
@@ -17,3 +19,6 @@ function decrement() {
 		CURRENT_NUMBER.innerHTML = count;
 	};
 };
+
+SOMA_BTN.addEventListener('click', increment);
+SUB_BTN.addEventListener('click', decrement);
