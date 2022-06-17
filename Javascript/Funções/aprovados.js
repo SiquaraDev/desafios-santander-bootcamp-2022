@@ -24,7 +24,7 @@ const alunos = [
 function alunosAprovados(alunos, media) {
     let aprovados = [];
     
-    for (let i = 0; i < alunos.length; i++) {
+    for (let i = 0 ; i < alunos.length; i++) {
         let {nota, nome} = alunos[i];
 
         if (nota >= media) {
