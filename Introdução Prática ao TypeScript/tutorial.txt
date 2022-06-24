@@ -1,0 +1,26 @@
+entra nas pasta que você vai trabalhar pelo powershell e usa os comandos:
+
+npm init
+
+npm install --save-dev typescript
+
+npm install lite-server
+
+vai no arquivo package.json, em scripts e adiciona 
+
+"start": "lite-server"
+"watch": "tsc --watch"
+
+cria um index.html
+
+cria um arquivo.ts
+
+vai no powershell e usa o comando:
+
+tsc --init
+
+npm run watch
+
+vai no arquivo tsconfig.json e coloca como rootDir o diretório onde você criar os arquivos .ts
+
+vai no arquivo tsconfig.json e coloca como outDir o diretório onde você compilar os arquivos .ts para .js
