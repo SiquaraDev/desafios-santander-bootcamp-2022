@@ -1,8 +1,8 @@
 vai na pasta do projeto e usa o comando:
 
-ng new course-manager
+ng new nomeDoProjeto
 
-N
+y
 
 CSS
 
@@ -10,7 +10,7 @@ CSS
 
 para dar start na aplicação usar o comando:
 
-ng serve
+ng serve -o
 
 a porta padrão é a 4200, então basta ir no navegador e colocar como link:
 
@@ -20,6 +20,12 @@ localhost:4200
 
 para instalar coisas externas na aplicação usar comando:
 
-npm install nome
+npm install nomeDoModulo
 
 pra ter certeza de que foi instalado é só procurar o nome na pasta node_modules
+
+#########################################################################
+
+para criar um novo componente usar o comando:
+
+ng g c nomeDoComponente
